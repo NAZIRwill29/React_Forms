@@ -16,6 +16,7 @@ function App() {
   function handleClick(event) {
     //set value h1
     setHeadingText(name);
+    // prevent from refresh because of form
     event.preventDefault();
   }
 
