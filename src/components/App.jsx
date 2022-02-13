@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function App() {
-  const [name, setName] = useState("");
+  const [name, setName] = useState("Hello");
   // handle change of input
   function handleChange(event) {
     // event.target.value = get the value in input
@@ -16,6 +16,7 @@ function App() {
         onChange={handleChange}
         type="text"
         placeholder="What's your name?"
+        value={name}
       />
       <button>Submit</button>
     </div>
