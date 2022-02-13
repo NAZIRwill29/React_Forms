@@ -13,9 +13,10 @@ function App() {
   }
 
   //handle click btn
-  function handleClick() {
+  function handleClick(event) {
     //set value h1
     setHeadingText(name);
+    event.preventDefault();
   }
 
   return (
